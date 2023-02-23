@@ -67,7 +67,6 @@ const UsersTable = (props) => {
       state: { rowData: params.row },
     });
   };
-  console.log(props.rowData);
   const handleNextButtonClick = (newPage) => {
     props.pageState.page = newPage + 1;
     props.setPageState({ ...props.pageState });

@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
       columnGap: "20px",
     },
   },
+  avatar: {
+    padding: 5,
+    border: `2px solid ${theme.pallette.secondary.light}`,
+    borderRadius: "50%",
+  },
 }));
 
 const TopBar = (props) => {
@@ -37,7 +42,9 @@ const TopBar = (props) => {
           <Typography style={{ fontSize: "calc(16px + .39063vw)" }}>
             {props.user?.name.first} {props.user?.name.last}
           </Typography>
-          <Avatar src={props.user?.picture.medium}></Avatar>
+          <div className={styles.avatar}>
+            <Avatar src={props.user?.picture.medium}></Avatar>
+          </div>
         </Toolbar>
       </AppBar>
     </>

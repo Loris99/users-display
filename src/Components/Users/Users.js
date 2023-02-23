@@ -36,7 +36,6 @@ const Users = (props) => {
       );
     }
     setPageState((old) => ({ ...old, isLoading: true }));
-    console.log("tempAPi", tempApi);
     axios({
       method: "get",
       withCredentials: false,
