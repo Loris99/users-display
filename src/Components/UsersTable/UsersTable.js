@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Outlet, useNavigate } from "react-router-dom";
 import FilterLine from "../FilterLine/FilterLine";
 import { makeStyles } from "@material-ui/styles";
 import Paper from "@material-ui/core/Paper";
-import { Pagination } from "@material-ui/lab";
 import { DataGrid } from "@mui/x-data-grid";
-import { PeopleSharp } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   tableroot: {

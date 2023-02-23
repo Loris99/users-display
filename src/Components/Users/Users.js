@@ -43,17 +43,14 @@ const Users = (props) => {
       url: tempApi,
     }).then((response) => {
       setRowData(response.data.results);
-      // console.log("responsE: ", response.data.results);
       setPageState((old) => ({
         ...old,
         isLoading: false,
-        // total: response.data.results.length,
       }));
     });
   };
   useEffect(() => {
     fetchFirstData();
-    // const firstSetOfUsersapi = `https://randomuser.me/api?results=8&page=${pageState.page}`;
   }, [dataFilters, pageState.page, pageState.pageSize]);
 
   const columns = [

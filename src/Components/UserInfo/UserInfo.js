@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
   },
   paper: {
-    width: "calc(30% - 100px)",
+    width: "calc(40% - 120px)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     height: "150px",
     position: "relative",
     width: "100%",
-    marginBottom: "40px",
     "& .MuiSvgIcon-root": {
       color: "white",
     },
@@ -44,11 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   avatar: {
-    position: "absolute",
-    transform: " translate(183%, 73%)",
-    [theme.breakpoints.down("sm")]: {
-      transform: "translate(150%, 50%)",
-    },
+    marginTop: "-70px",
     width: "100px",
     height: "100px",
   },
@@ -100,11 +95,11 @@ const UserInfo = (props) => {
               className={styles.arrowBack}
             />
           </IconButton>
-          <Avatar
-            className={styles.avatar}
-            src={userData?.picture.medium}
-          ></Avatar>
         </div>
+        <Avatar
+          className={styles.avatar}
+          src={userData?.picture.medium}
+        ></Avatar>
         <Typography className={styles.name} variant="h3">
           {userData?.name.first}
           {userData?.name.last}
