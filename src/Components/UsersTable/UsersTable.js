@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   tableroot: {
     "&.MuiPaper-root": {
       boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75);",
-      width: "84%",
+      width: "80%",
       height: "84%",
       margin: "100px 30px 30px 270px",
       [theme.breakpoints.down("sm")]: {
