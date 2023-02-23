@@ -34,7 +34,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route path="/usersDisplay" element={<MainLayout />}>
+        <Route path="/users-display" element={<MainLayout />}>
           <Route exact path="users" element={<Users />}>
             <Route
               exact
