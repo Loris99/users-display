@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     "& .MuiIconButton-root": {
       marginTop: "5px",
+      backgroundColor: theme.mainLayout.backgroundColor,
+      position: "fixed",
+      zIndex: "100",
+      height: "51px",
+      borderRadius: 0,
     },
     "& .MuiDrawer-paperAnchorLeft": {
       background: theme.sideBar.backgroundColor,

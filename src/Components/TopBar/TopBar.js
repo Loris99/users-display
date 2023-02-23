@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "20px",
     paddingRight: "20px",
     width: "calc(100% - 240px)",
+    position: "fixed",
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 40px)",
       paddingTop: 0,

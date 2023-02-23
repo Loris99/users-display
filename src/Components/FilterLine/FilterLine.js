@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     marginBottom: "30px",
-
+    margin: "20px",
     "& .MuiOutlinedInput-root": {
       width: "calc(80% + 20px)",
       height: "40px",
